@@ -1,0 +1,26 @@
+#main-content {
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: var(--border);
+}
+
+.first-block, .second-block {
+    grid-row: span 2;
+}
+
+.first-block {
+    border-right: var(--border);
+    background-color: var(--cyan-block);
+}
+
+.second-block {
+    background-color: var(--yellow-block);
+}
+
+.third-block {
+    border-top: var(--border);
+    grid-area: 3 / 1 / -1 / -1;
+    background-color: var(--dark-grey-blue-block);
+}

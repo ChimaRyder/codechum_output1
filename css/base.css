@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 80px 30%;
+    --border-color: #395A81;
+    --yellow-block: #EEE600;
+    --cyan-block: #507CB2;
+    --dark-grey-blue-block: #1F515F;
+    --red-block: #EA0405;
+    --light-cyan-block: #88A4C5;
+    --brown-block: #E3AE83;
+    --border: 4px solid var(--border-color);
+}
+

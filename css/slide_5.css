@@ -1,0 +1,57 @@
+body {
+    padding: 80px 25%;
+}
+
+#main-content {
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+#main-content > * {
+    border: var(--border);
+}
+
+.first-block, .second-block, .third-block {
+    grid-row: span 2;
+}
+
+.first-block {
+    background-color: var(--cyan-block);
+}
+
+.second-block {
+    background-color: var(--dark-grey-blue-block);
+}
+
+.third-block {
+    background-color: var(--yellow-block);
+}
+
+.fourth-block, .fifth-block {
+    grid-area: span 2 / span 3;
+}
+
+.fourth-block {
+    background-color: var(--red-block);
+}
+
+.fifth-block {
+    display: flex;
+}
+
+.left-side, .right-side {
+    height: inherit;
+    width: 50%;
+}
+
+.left-side {
+    background-color: var(--light-cyan-block);
+    border-right: var(--border);
+}
+
+.right-side {
+    background-color: var(--brown-block);
+}

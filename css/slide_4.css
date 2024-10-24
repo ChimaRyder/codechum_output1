@@ -1,0 +1,27 @@
+#main-content {
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    border: var(--border);
+}
+
+.first-block {
+    grid-area: 1 / 1 / 3 / -1;
+    border-bottom: var(--border);
+}
+
+.first-block {
+    background-color: var(--cyan-block);
+}
+
+.second-block {
+    grid-area: 3 / 1 / -1 / 3;
+    border-right: var(--border);
+    background-color: var(--dark-grey-blue-block);
+}
+
+.third-block {
+    grid-area: 3 / 3 / -1 / -1;
+    background-color: var(--yellow-block);
+}
